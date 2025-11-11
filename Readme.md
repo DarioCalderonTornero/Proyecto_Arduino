@@ -1,54 +1,24 @@
-# 🔌 Proyecto Arduino
+# 🎯 Hundir la Flota en Solitario - 8x8 LED Matrix
 
-Este proyecto utiliza una placa **Arduino UNO** para controlar sensores y actuadores, permitiendo realizar mediciones y acciones automáticas de forma sencilla.
+¡Bienvenido a la versión **en solitario** del clásico juego **“Hundir la Flota”**! ⚓🛳️  
 
----
+Este proyecto utiliza una **matriz de LEDs 8x8 (1588 BS)** y un **joystick** para que el jugador pueda navegar y disparar a los barcos ocultos.  
 
-## 🧠 Descripción
+## 🕹️ Cómo jugar
+- Al iniciar la partida, los barcos se colocan **aleatoriamente** en la matriz, pero el jugador **no los ve**.  
+- Usa el **joystick** para moverte por la cuadrícula.  
+- Pulsa para **disparar** en la casilla seleccionada:  
+  - 💡 **Acertaste:** el LED se enciende.  
+  - ⚪ **Fallaste:** el LED queda apagado.  
+- Tienes **5 vidas**. Cada fallo resta una vida.  
+- Descubre todos los barcos antes de perder todas las vidas para **ganar**.  
 
-El objetivo de este proyecto es leer los datos de un sensor (por ejemplo, de temperatura o luz) y activar un actuador (como un LED o un motor) según los valores recibidos.
+## 🔄 Bucle de la partida
+Cada partida sigue un loop sencillo y adictivo:  
+1. Moverse por la matriz.  
+2. Disparar a la casilla seleccionada.  
+3. Verificar si aciertas o fallas.  
+4. Actualizar vidas y LEDs.  
+5. Repetir hasta ganar o perder.  
 
----
-
-## ⚙️ Componentes necesarios
-
-- Arduino UNO  
-- Sensor de temperatura **DHT11**  
-- LED y resistencia de 220 Ω  
-- Cables de conexión  
-- Protoboard  
-
----
-
-## 💻 Código de ejemplo
-
-```cpp
-#include <DHT.h>
-
-#define DHTPIN 2       // Pin del sensor
-#define DHTTYPE DHT11  // Tipo de sensor
-#define LEDPIN 13      // Pin del LED
-
-DHT dht(DHTPIN, DHTTYPE);
-
-void setup() {
-  Serial.begin(9600);
-  dht.begin();
-  pinMode(LEDPIN, OUTPUT);
-}
-
-void loop() {
-  float temperatura = dht.readTemperature();
-
-  Serial.print("Temperatura: ");
-  Serial.print(temperatura);
-  Serial.println(" °C");
-
-  if (temperatura > 25) {
-    digitalWrite(LEDPIN, HIGH); // Enciende el LED
-  } else {
-    digitalWrite(LEDPIN, LOW);  // Apaga el LED
-  }
-
-  delay(2000);
-}
+¡Prepárate para poner a prueba tu **estrategia y puntería**! 🎮⚓
