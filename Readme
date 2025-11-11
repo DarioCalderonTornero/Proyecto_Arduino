@@ -1,0 +1,15 @@
+# Proyecto Arduino
+
+Este proyecto controla sensores y actuadores usando una placa Arduino.
+
+## Ejemplo de código
+
+```cpp
+void setup() {
+    Serial.begin(9600);
+}
+
+void loop() {
+    Serial.println("Hola desde Arduino!");
+    delay(1000);
+}
