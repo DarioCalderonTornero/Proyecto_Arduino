@@ -152,7 +152,7 @@ El proyecto combina sensores y actuadores para crear una experiencia interactiva
 - Conseguimos lectura estable del joystick (ejes X, Y y pulsador).
 - Probamos a mover un “cursor” por la matriz LED 8×8 según los valores del joystick.
 - Empezamos a plantear la lógica del disparo y la detección de casillas.
-- Actualizado el README con avances para el Sprint 1.
+Añadimos un buzzer que emite un sonido cada vez que se pulsa el joystick. Más adelante, solo sonará en caso de fallo.- Actualizado el README con avances para el Sprint 1.
 **Pendiente:** implementar impacto/fallo y brillo variable según el resultado.
 
 
