@@ -48,10 +48,6 @@ El proyecto combina sensores y actuadores para crear una experiencia interactiva
 - 🧵 Cables puente  
 - 🔌 Resistencias  
 
-> 🧭 Más detalles en el archivo `hardware.md`.
-
----
-
 ## 📁 Entregables en el repositorio
 
 - `README.md`  
@@ -66,7 +62,6 @@ El proyecto combina sensores y actuadores para crear una experiencia interactiva
   - Capturas de pantalla  
   - Código del prototipo  
 
-- `hardware.md`  
   - Lista de sensores  
   - Componentes  
   - Conexiones  
@@ -74,7 +69,7 @@ El proyecto combina sensores y actuadores para crear una experiencia interactiva
 - Carpeta de código (`/src` o `/arduino`)  
   - Código completo del juego
 
-- Extras (opcionales pero recomendados)  
+- Extras  
   - 📸 Fotos del montaje  
   - 🎥 Vídeo del prototipo funcionando  
 
@@ -88,10 +83,7 @@ El proyecto combina sensores y actuadores para crear una experiencia interactiva
 - ✔️ Equipo definido  
 - ✔️ README inicial creado  
 - 🔧 Pruebas hechas:
-  - Lectura del joystick  
-  - Encendido básico de la matriz  
-
-*(Se irá actualizando.)*
+  - Encendido completo de la matriz de leds
 
 ---
 
@@ -101,7 +93,6 @@ El proyecto combina sensores y actuadores para crear una experiencia interactiva
 
 - Definir objetivo y alcance  
 - Boceto inicial en Tinkercad  
-- Lectura de joystick  
 - Encendido básico de LED  
 - Comienzo del README  
 
@@ -110,36 +101,28 @@ El proyecto combina sensores y actuadores para crear una experiencia interactiva
 - Movimiento del cursor con joystick  
 - Disparo al pulsar el botón  
 - Colocación aleatoria de barcos  
-- Sistema de impacto/fallo con brillo  
-- Completar `hardware.md`  
-- Actualizar bitácora y resolución de problemas  
+- Sistema de impacto/fallo con brillo
+- Resolución de problemas
 
 ### 🟥 LiveDemo (05/12 – 16/12)
 
 - Ajustes de sensibilidad, tiempos y brillo  
-- Pruebas de estabilidad eléctrica  
 - Preparar explicación del circuito  
 - Explicar el código en la presentación  
 - Grabar vídeo como respaldo  
-
----
 
 ## 📒 Bitácora de trabajo
 
 > Registro de avances del equipo, sesión a sesión.
 
-**23/11 – Definición del proyecto**  
+**Definición del proyecto**  
+
 - Decidimos hacer un Hundir la Flota físico 🎮🔲  
 - Elegimos joystick + matriz LED como base  
 - Revisamos la guía oficial para organizar entregables  
 
-**24/11 – Pruebas iniciales**  
-- Lectura del joystick funcionando  
+**Pruebas iniciales**  
 - Primer encendido de LEDs OK  
-
-*(Seguiremos documentando cada sesión.)*
-
----
 
 ## 🧾 Tareas pendientes
 
@@ -150,4 +133,4 @@ El proyecto combina sensores y actuadores para crear una experiencia interactiva
 - [ ] Crear condición de victoria  
 - [ ] Comentar todo el código  
 - [ ] Añadir fotos del montaje  
-- [ ] Preparar materiales de la LiveDemo  
+- [ ] Preparar materiales 
