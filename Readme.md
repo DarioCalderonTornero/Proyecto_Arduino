@@ -113,16 +113,49 @@ El proyecto combina sensores y actuadores para crear una experiencia interactiva
 
 ## 📒 Bitácora de trabajo
 
-> Registro de avances del equipo, sesión a sesión.
+### 🗓️ 11/11 – Inicio del proyecto y lluvia de ideas
+- Primera sesión del proyecto.
+- Pensamos distintas ideas y finalmente elegimos crear un **Hundir la Flota físico** con joystick + matriz LED 8×8.
+- Revisamos la guía de Computación Física para entender entregables y sprints.
+- Repartimos roles: ambos programación y pruebas.
 
-**Definición del proyecto**  
+---
 
-- Decidimos hacer un Hundir la Flota físico 🎮🔲  
-- Elegimos joystick + matriz LED como base  
-- Revisamos la guía oficial para organizar entregables  
+### 🗓️ 13/11 – Investigación de componentes
+- Buscamos información sobre cómo funcionan las matrices LED (modelo 1588BS).
+- Revisamos las características del joystick analógico (X/Y + pulsador).
+- Consultamos ejemplos y documentación de Arduino relacionados con matrices.
+- Estudiamos cómo representar un tablero 8×8 mediante filas y columnas.
+**Pendiente:** comprobar encendido real de la matriz.
 
-**Pruebas iniciales**  
-- Primer encendido de LEDs OK  
+---
+
+### 🗓️ 18/11 – Pruebas de la matriz LED 8×8
+- Cableamos por primera vez la matriz 8×8 en protoboard.
+- Comprobamos que los LEDs se encendían correctamente controlando filas y columnas.
+- Detectamos errores de cableado y corregimos posiciones equivocadas.
+- Encendimos LEDs individuales como prueba de funcionamiento.
+**Pendiente:** integrar joystick más adelante.
+
+---
+
+### 🗓️ 20/11 – Sesión de análisis y planificación
+- Revisamos qué pines de Arduino serían óptimos para la matriz y el joystick.
+- Decidimos la estructura del código del proyecto (lectura → lógica → dibujo).
+- Analizamos posibles formas de representar los barcos dentro de la matriz.
+- Organizamos el repositorio y añadimos archivos base.
+**Pendiente:** empezar las pruebas con el joystick.
+
+---
+
+### 🗓️ 25/11 – Lectura del joystick y movimiento inicial
+- Conseguimos lectura estable del joystick (ejes X, Y y pulsador).
+- Probamos a mover un “cursor” por la matriz LED 8×8 según los valores del joystick.
+- Empezamos a plantear la lógica del disparo y la detección de casillas.
+- Actualizado el README con avances para el Sprint 1.
+**Pendiente:** implementar impacto/fallo y brillo variable según el resultado.
+
+
 
 ## 🧾 Tareas pendientes
 
