@@ -157,14 +157,19 @@ Añadimos un buzzer que emite un sonido cada vez que se pulsa el joystick. Más 
 
 ### 🗓️ **02/12 – Implementación de la lógica completa de Hundir la Flota**
 - Añadimos la **lógica principal del juego**: el Arduino genera ahora **coordenadas aleatorias** para simular los barcos distribuidos por la matriz 8×8.  
-- Implementamos la **detección de impacto**: si el jugador dispara sobre una casilla con barco, el LED correspondiente se enciende con **máxima intensidad**.  
-- Programamos la **detección de fallo**: en caso de disparar sobre una casilla sin barco, el LED se ilumina con **bajo brillo** para indicar agua.  
+- Implementamos la **detección de impacto**: si el jugador dispara sobre una casilla con barco, el LED correspondiente se enciende.  
+- Programamos la **detección de fallo**: en caso de disparar sobre una casilla sin barco, suena el buzzer un error.  
 - Integramos estas comprobaciones en el ciclo completo: **lectura del joystick → disparo → actualización visual del tablero**.  
-- Ajustamos niveles de intensidad para que la diferencia entre acierto y fallo sea claramente visible.  
 - Dejamos preparada la base para añadir la futura **condición de victoria** cuando todos los barcos sean encontrados.
 
-**Pendiente:** implementar la condición de victoria y ajustar definitivamente la intensidad de los LEDs.
+**Pendiente:** implementar la condición de acierto/fallo.
 
+### 🗓️ **04/12 – Implementación de la lógica completa de Hundir la Flota**
+- Implementacion del acierto con feedback (buzzer).
+- Marcaje de los aciertos con el led encendido.
+- Tanto acierto como fallo con sonidos diferentes.
+
+**Pendiente:** probarlo en fisico.
 
 ## 🧾 Tareas pendientes
 
