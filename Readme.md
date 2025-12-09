@@ -168,10 +168,13 @@ Añadimos un buzzer que emite un sonido cada vez que se pulsa el joystick. Más 
 - Implementacion del acierto con feedback (buzzer).
 - Marcaje de los aciertos con el led encendido.
 - Tanto acierto como fallo con sonidos diferentes.
-
-**Pendiente:** probarlo en fisico.
-
-## 🧾 Tareas pendientes
+- 
+### 🗓️ **09/12 – Implementación de la lógica completa de Hundir la Flota**
+- Implementacion de sistema y lógica de vidas.
+- Condición victoria derrota.
+- Implementación de parpadeo LED según si se ha ganado o perdido.
+- Lógica de reinicio completo de partida.
+- Prueba en físico para confirmar funcionamiento.
 
 - [ ] Diseñar circuito completo en Tinkercad  
 - [ ] Mapear coordenadas del joystick a la matriz  
