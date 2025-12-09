@@ -176,6 +176,9 @@ Añadimos un buzzer que emite un sonido cada vez que se pulsa el joystick. Más 
 - Lógica de reinicio completo de partida.
 - Prueba en físico para confirmar funcionamiento.
 
+
+
+
 - [ ] Diseñar circuito completo en Tinkercad  
 - [ ] Mapear coordenadas del joystick a la matriz  
 - [ ] Generar barcos aleatorios  
